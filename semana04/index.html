@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCC206 Callbacks</title>
+</head>
+<body>
+    <form name="entrada">
+        <label >Qual seu nome?
+            <input type="text" name="nome" value="">
+        </label>
+        <button type="submit" >Diz olá</button>
+    </form>
+    <p id = "saida"></p>
+    <script>
+        const entrada = document.entrada;
+        const saida = document.querySelector("#saida");
+        
+        function dizOla(evento){
+            evento.preventDefault()
+            saida.textContent = "Olá " + entrada.nome.value;
+        }
+        entrada.addEventListener("submit", dizOla)
+    </script>
+</body>
+</html>
