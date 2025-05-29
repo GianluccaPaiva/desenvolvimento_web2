@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCC206 CALLBACKS</title>
+</head>
+<body>
+    <form name="entrada">
+        <label>Qual seu nome?
+            <input type="text" name="nome" value="Fulano">
+        </label>
+        <button type="submit"> Diz Ola</button>
+    </form>
+    <p id="saida"></p>
+    <script>
+        const entrada = document.entrada;
+        const saida = document.querySelector
+        ("#saida");
+        function dizOla(evento){
+            evento.preventDefault();
+            saida.textContent = "Ola "+entrada.nome.value;
+        }
+
+        entrada.addEventListener("submit", dizOla);
+            
+    </script>
+
+</body>
+</html>
