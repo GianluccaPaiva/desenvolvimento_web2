@@ -31,4 +31,4 @@ async function rodaTudo(){
 
 rodaTudo();
 
-// AWAIT só pode ser usado em f(X) se ela for asyns(ASSINCRONA) => N TRAVA A LINHA//
+// AWAIT só pode ser usado em f(X) se ela for asyns(ASSINCRONA) => N TRAVA A LINHA//    
