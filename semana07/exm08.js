@@ -12,7 +12,11 @@ class Pessoa {
     }
 }
 
-//mesmo que o, creat prototype porém de outra sintaxe
+//mesmo que o creat prototype porém de outra sintaxe
 Pessoa.prototype.comer = comerFrutas;
 
 const pessoa1 = new Pessoa("Maria", 12, 5); //chama com new e a função construtora com seus atributos.
+
+console.log(pessoa1);
+pessoa1.comer();//funciona ultilizando a função em cima do protótipo
+console.log(pessoa1);
